@@ -1,0 +1,24 @@
+<div class="container col-12">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Firstname</th>
+        <th scope="col">Lastname</th>
+        <th scope="col">Active</th>
+        <th scope="col">Update</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td scope="row">{{ contact.id }}</td>
+        <td>{{ contact.first_name }}</td>
+        <td>{{ contact.last_name }}</td>
+        <td>{{ contact.email }}</td>
+        <td><button (click)="updateMe(contact)">Update</button></td>
+        <td><button (click)="removeMe(contact)">X</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -306,6 +306,14 @@
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
   <span>Welcome</span>
+    <ul class="list-inline mt-3 ml-5">
+      <li class="list-inline-item"><a class="text-light pr-2" [routerLink]="'/accounts'"> Accounts </a></li>
+      <li class="list-inline-item"><a class="text-light pr-2" [routerLink]="'/create-account'"> Create Account </a></li>
+      <li class="list-inline-item"><a class="text-light pr-2" [routerLink]="'/contacts'"> Contacts </a></li>
+      <li class="list-inline-item"><a class="text-light pr-2" [routerLink]="'/create-contact'"> Create Contact </a></li>
+      <li class="list-inline-item"><a class="text-light pr-2" [routerLink]="'/activities'"> Activities </a></li>
+      <li class="list-inline-item"><a class="text-light pr-2" [routerLink]="'/create-activity'"> Create Activity </a></li>
+    </ul>
     <div class="spacer"></div>
     <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
       <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -316,9 +324,8 @@
 </div>
 
 <div class="content" role="main">
-
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
+  <div class="card highlight-card card-small mb-5">
 
     <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
@@ -337,6 +344,8 @@
     </svg>
 
   </div>
+
+  <router-outlet></router-outlet>
 
   <!-- Resources -->
   <h2>Resources</h2>
@@ -531,4 +540,4 @@
 
 
 
-<router-outlet></router-outlet>
+

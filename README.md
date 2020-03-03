@@ -1,4 +1,5 @@
 # Ngsimplecrm
+Angular 9 CRUD App, consuming Rest API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0-next.1.
 
